@@ -1,15 +1,3 @@
-@font-face {
-    font-family: Whirlybats;
-    src: url(../font/Whirlybats.ttf);
-}
-@keyframes basicAnimation {
-      0% {
-        font-variation-settings: "anim" 100;
-      }
-      100% {
-        font-variation-settings: "anim" 200;
-      }
-}
 @media screen and (max-width:500px) {
     .wrapper{
         width: 200px!important;
@@ -56,20 +44,11 @@
       }
     
 }
-
 .golr{
     right: 92%;
 }
 .JivaColor{
     background-color: #cfadff !important;
-}
-.font-show{
-    font-family: Whirlybats;
-    transition: .6s;
-    animation: linear 1s basicAnimation infinite;
-}
-.Fontanimate{
-    animation: basicAnimation 1s infinite;
 }
 .FlexCenter{
     display: flex;
