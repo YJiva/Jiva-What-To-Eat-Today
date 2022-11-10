@@ -1,0 +1,279 @@
+@font-face {
+    font-family: Whirlybats;
+    src: url(../font/Whirlybats.ttf);
+}
+@keyframes basicAnimation {
+      0% {
+        font-variation-settings: "anim" 100;
+      }
+      100% {
+        font-variation-settings: "anim" 200;
+      }
+}
+@media screen and (max-width:500px) {
+    .wrapper{
+        width: 200px!important;
+        height: 200px!important;
+        border-radius: 50%!important;
+    }
+    .panel {
+        height: 200px!important;
+        width:200px!important;
+        border-radius: 100px!important;
+      }
+      .sector {
+        left: 100px !important;
+        top: 0px !important;
+        width: 100px !important;
+        height: 200px !important;
+        font-size: 13px !important;
+        border-radius: 0px 100px 100px 0 !important;
+      }
+     .sector-inner {
+        width: 100px!important;
+        padding: 5px 0px 0 39px!important;
+        height: 195px!important;
+        transform: translateX(-98px) rotate(36deg)!important;
+        border-radius: 100px 0 0 100px!important;
+      }
+      .pointer {
+        left: 73px !important;
+        top: 73px !important;
+        z-index: 10 !important;
+        height: 50px !important;
+        width: 50px !important;
+        padding: 6px !important;
+        line-height: 15px !important;
+        font-size: 12px !important;
+        text-align: center !important;
+        border-radius: 50% !important;
+        transition: transform 3s cubic-bezier(.2,.93,.43,1)!important;
+      }
+      .pointer::after {
+        left: 14px !important;
+        top: -37px !important;
+        border-width: 20px 10px !important;
+      }
+    
+}
+
+.golr{
+    right: 92%;
+}
+.JivaColor{
+    background-color: #cfadff !important;
+}
+.font-show{
+    font-family: Whirlybats;
+    transition: .6s;
+    animation: linear 1s basicAnimation infinite;
+}
+.Fontanimate{
+    animation: basicAnimation 1s infinite;
+}
+.FlexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    background-color: #714fa1;
+}
+.drawer{
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    border-radius: 0px 10px 10px 0;
+    background-color: aliceblue;
+    transition: 1s;
+    display: flex;
+    z-index: 50;
+}
+.drawer>.drawerBtn{
+    color: #fff;
+    top: 50%;
+    position: absolute;
+    right: -20px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #cfadff;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.drawer>.drawerBtn:hover{
+    
+    transition: .6s;
+}
+.drawer>.drawerBtn:active{
+    color: #0d021d;
+    background-color: blueviolet;
+}
+.drawer>.drawerTitle{
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    font-weight: bold;
+
+}
+.drawer>.drawerTitle>.rubbishLine{
+    width: 8px;
+    border-radius: 10px;
+    height: 40px;
+    margin-right: 10px;
+}
+.drawer>.Author>.rubbishLine{
+    width: 8px;
+    border-radius: 10px;
+    height: 40px;
+    
+    margin-right: 5px;
+}
+.drawer>.Author{
+    padding-right: 10px;
+    width: auto;
+    height: 40px;
+    margin-left: 10px;
+    position: absolute;
+    border-radius:  0 10px 10px 0;
+    bottom: 10px;
+    left: 100px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border: 2px solid #cfadff;
+}
+.show{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.wrapper{
+    width: 600px;
+    height: 600px;
+    background-color: #ff5555;
+    border-radius: 50%;
+    z-index: 20;
+}
+.panel {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    background-color: #b7b7b7;
+    border-radius: 600px;
+  }
+  .sector {
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    width: 300px;
+    height: 600px;
+    font-size: 14px;
+    border-radius: 0px 300px 300px 0;
+    overflow: hidden;
+    transform-origin: left center;
+  }
+  .sector:nth-child(1) {
+    transform: rotate(-18deg);
+  }
+  .sector:nth-child(2) {
+    transform: rotate(18deg);
+  }
+  .sector:nth-child(3) {
+    transform: rotate(54deg);
+  }
+  .sector:nth-child(4) {
+    transform: rotate(90deg);
+  }
+  .sector:nth-child(5) {
+    transform: rotate(126deg);
+  }
+  .sector:nth-child(6) {
+    transform: rotate(162deg);
+  }
+  .sector:nth-child(7) {
+    transform: rotate(198deg);
+  }
+  .sector:nth-child(8) {
+    transform: rotate(234deg);
+  }
+  .sector:nth-child(9) {
+    transform: rotate(270deg);
+  }
+  .sector:nth-child(10) {
+    transform: rotate(306deg);
+  }
+  .sector:nth-child(2n+1) .sector-inner {
+    background: #fef6e0;
+  }
+  .sector:nth-child(2n) .sector-inner {
+    background: #ffffff;
+  }
+  .sector-inner {
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding: 57px 0px 0 157px;
+    height: 600px;
+    transform: translateX(-300px) rotate(36deg);
+    transform-origin: right center;
+    border-radius: 300px 0 0 300px;
+  }
+  .sector-inner span {
+    display: block;
+    transform-origin: center;
+    transform: rotate(-19deg);
+    color: #d46854;
+  }
+  .pointer {
+    position: absolute;
+    left: 250px;
+    top: 250px;
+    z-index: 10;
+    height: 100px;
+    width: 100px;
+    padding: 6px;
+    color: #fff899;
+    line-height: 15px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #FE4848;
+    border-radius: 50%;
+    border: 1px solid #FE4848;
+    transition: transform 3s cubic-bezier(.2,.93,.43,1);
+  }
+  .pointer::after {
+    content: '';
+    position: absolute;
+    left: 34px;
+    top: -56px;
+    border-width: 30px 15px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #FE4848;
+    transform-origin: center;
+  }
