@@ -22,17 +22,16 @@
 
 ## 🚀 快速开始
 ### 本地运行
-```bash
+```base
 git clone https://github.com/YJiva/Jiva-What-To-Eat-Today.git
 cd Jiva-What-To-Eat-Today
+```
 # 直接双击index.html即可
 
 
-## 在线体验
 
-###  点击这里立即体验(https://yjiva.github.io/Jiva-What-To-Eat-Today/)
 
-## 🐛 已知问题
+## 🚀 快速开始
 
 ### 1. 性能问题
 
@@ -63,13 +62,13 @@ cd Jiva-What-To-Eat-Today
 ☐ 增加分享功能
 
 ## 📝 使用示例
-
-// 核心代码片段
-function spinWheel() {
-  const result = foodList[Math.floor(Math.random() * foodList.length)];
-  console.log(`今天吃：${result}`);
-}
-
+```code
+      // 核心代码片段
+      function spinWheel() {
+        const result = foodList[Math.floor(Math.random() * foodList.length)];
+        console.log(`今天吃：${result}`);
+      }
+```
 
 ## ⚠️ 免责声明
 
