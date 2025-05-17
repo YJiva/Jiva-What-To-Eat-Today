@@ -42,7 +42,30 @@
         <div class="drawerTitle">
             <div class="rubbishLine JivaColor"></div>
             <span>Setting</span>
+            <button id="update" onclick="resetFood(defCFG)" style="  margin-left: auto;margin-right: 10px;">resetFood</button>
+            <button id="update" onclick="update(newCFG)" style="  margin-left: auto;margin-right: 10px;">update</button>
         </div>
+       <div class="container foodList">
+        <div class="row" style="justify-content: center;">
+            <div class="row" style="height: 10%;">
+                <input type="text" class="form-control col-12" id="FoodInput" placeholder="你想吃什么">
+                <button type="button" class="col-6 btn-success addFood" onclick="foodAdd($('#FoodInput').val())" >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                  <button type="button" onclick="foodRemove()" class="col-6 btn-danger addFood">
+                    <i class="fa fa-times"></i>
+                  </button>
+            </div>
+          
+              <div class="row addFoodList col-10" id="addhere" style="margin-top: 20%;">
+                
+               
+              </div>
+        </div>
+         
+
+        
+       </div>
         <button type="button" class="show btn btn-outline-success FlexCenter" data-bs-toggle="modal" data-bs-target="#myModal">Support</button>
         <div class="Author">
             <div class="rubbishLine JivaColor"></div>
